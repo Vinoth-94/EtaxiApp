@@ -1,0 +1,429 @@
+.booking-section{
+    position: relative;
+    overflow: hidden;
+
+    .banner-wrapper{
+        height: 100%;
+        .banner-img{
+            height: 100%;
+            width: 100%;
+            img{
+                height: 100%;
+                object-fit: fill;
+            }
+
+        }
+    }
+
+    .booking-field-wrap{
+        
+        color: $text-white;
+        border-radius: 20px 0 0 0 ;
+
+        &::after{
+            content: " ";
+            width: 50vw;
+            height: 100%;
+            background-color:$prime-blue;
+            position: absolute;
+            border-radius: 111px 0 0 0px;
+            transform: skew(12deg);
+            z-index: -1;
+            left: 0;
+            top: 0;
+        }
+        .booking-field-card{
+            padding: 30px 0;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+
+            .booking-txt{
+                width: 100%;
+                padding: 5px 60px;
+                color: #fff;
+                line-height: 1.5;
+                h2{
+                    font-size: 40px;
+                    line-height: 1.26087;
+                }
+                .contact-field{
+                    font-size: 2rem;
+
+
+                    .call-icon{
+                        font-size: 2rem;
+                        color: rgba(255, 255, 255, 0.36);
+                    }
+                    .cnt-tel{
+                        color: #fff;
+                        &:hover{
+                            color: $sec-green;
+                        }
+                    }
+                }
+            }
+            .booking-form-wrap{
+                padding: 0 60px;
+                
+
+                .booking-form-card{
+                    max-width: 400px;
+                    // margin-top: 50px;
+                    .form-wrap{
+                        position: relative;
+                        .ip-icons{
+                            position: absolute;
+                            top: 0;
+                            color: rgba(0, 0, 0, 0.4);
+                            right: 0;
+                            padding: 10px;
+                            font-size: 1.6rem;
+                            background: #fff;
+                            margin: 2px;
+                        }
+                    }
+                    .form-op{
+                        min-height: 55px;
+                    padding: 15px 26px;
+                    }
+                    .form-ip{
+                        display: block;
+                        width: 100%;
+                        min-height: 55px;
+                        padding: 15px 26px;
+                        margin-top: 20px;
+                        
+
+                    }
+                    .form-btn{
+                        
+                        background-color: $sec-green;
+                        color: #fff;
+                        border: transparent;
+                        margin-top: 20px;
+                        &:hover{
+                            background-color: #fff;
+                            color: #000;
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+.service-section{
+    background: $bg-gray;
+
+    padding: 85px 0 95px;
+    .Services-wrapper{
+
+        .heading-card{
+            font-size: 37px;
+            line-height: 1.2973;
+            text-align: center;
+        }
+
+        .box-mordern{
+            padding: 45px 30px;
+            background: #fff;
+            border-radius: 7px;
+            text-align: center;
+            box-shadow: -1px 9px 15px 0px rgba(75, 81, 91, 0.1);
+            .box-mordern-media{
+                padding: 20px 0;
+                font-size: 60px;
+                line-height: 1;
+                min-height: 1.3em;
+                width: 1.9em;
+                margin-left: auto;
+                margin-right: auto;
+
+                i{
+                    z-index: 2;
+                    font-size: inherit;
+                    color: $sec-green;
+                }
+
+                .plane{
+                    i{
+                        transform: rotate(315deg);
+                    }
+                }
+
+            }
+            .box-modern-title{
+                font-size: 20px;
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 20px;
+                line-height: 1.3;
+                font-weight: 600;
+                letter-spacing: 0;
+                color: $text-black;
+                text-transform: uppercase;
+            }
+            .box-mordern-text{
+                margin-top: 12px;
+
+            }
+        }
+    }
+}
+
+.app-download-section{
+
+    padding: 100px 0px;
+    background-color: $pr2-blue;
+    overflow: hidden;
+    .app-dwnld-img-wrap{
+        position: relative;
+        .app-dwnld-img{
+            position: absolute;
+
+        }
+    }
+    .app-downld-text-wrap{
+        h3{
+            color: #fff;
+            padding: 20px;
+        }
+
+        .tab-card{
+            color: #fff;
+            margin-top: 20px;
+            .nav-nav-tab{
+                padding: 0 20px;
+                .nav-tab{
+                    margin-right: 20px;
+                    padding: 20px 0;
+                    .nav-tab-link{
+                        border-bottom: 3px solid #fff;
+                        padding-bottom: 5px;
+                        color: #fff;
+
+                    }
+                    .no-act{
+                        color: $lite-gray;
+                        border-color: $lite-gray;
+                        
+                        &:hover{
+                            color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+
+                }
+                
+
+            }
+        }
+        .nav-nav-tab-content{
+            padding: 0 20px;
+
+            .nav-tab{
+                ul{
+                    
+                    li{
+                        display: list-item;
+
+                        &::before{
+                            list-style:disc ;
+                            content: "";
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin: 3px 10px 3px 0;
+                            background-color: yellow;
+                        }
+                    }
+                }
+            }
+        }
+        .app-dwnld-nav{
+            margin-top: 40px;
+            a{
+                padding-left:20px;
+            }
+        }
+    }
+}
+
+.price-list-section{
+    padding: 80px 0;
+    .price-list-wrapper{
+        .border-1{
+            overflow: hidden;
+            position: relative;
+            & >div::before{
+                content: "";
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                left: -11px;
+                top: 0;
+                background: radial-gradient(circle, #aeb1b6  0%, #fff 100%);
+    
+            }
+        }
+        
+        .box-model{
+            padding: 40px 0;
+            text-align: center;
+            .box-mode-title{
+                font-size: 2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+
+            }
+            .box-model-text{
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 0;
+                color: $sec-green;
+
+            }
+
+        }
+    }
+}
+
+.isotope-section{
+    .isotope-wrapper{
+
+        .Partners-card{
+            .row{
+                justify-content: space-between;
+
+            }
+
+            margin-top: 50px;
+            .Partners-img-card{
+                display: flex;
+                a{
+                    margin: auto;
+                    opacity: .3;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.offer-section{
+    position: relative;
+    overflow: hidden;
+    &::before{
+        background: rgba(42, 70, 150, 0.74);
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+    }
+
+    .bg-set{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+    }
+
+    .offers-text-wrapper{
+       
+
+        .offer-text-area{
+            text-align: center;
+            color: #fff;
+            .row{
+                justify-content: flex-end;
+            }
+            h1{
+                font-size: 4rem;
+                padding: 10px;
+                margin-bottom: 20px;
+                line-height: 1.2;
+            
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                padding: 0 30px;
+                font-weight: 300;
+                letter-spacing: .025em;
+            }
+
+            a{
+                background-color: $sec-green;
+                border: 0;
+                margin-top: 30px;
+                color: #fff;
+            }
+
+        }
+
+    }
+}
+
+.service-page-section {
+    .banner-sec{
+        .banner-title{
+            h1{
+                color: #fff;
+                line-height: 1.2;
+                font-size: 3.2rem;
+            }
+
+        }
+        
+    }
+
+    .service-text-wrap{
+
+        .list-item-wrapper{
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .list-block-item{
+                border:1px solid #ebebeb;
+                margin: -1px 0 0 -1px;
+                padding: 55px 20px;
+                border-bottom: 0;
+                border-right: 0;
+                .service-card{
+                    max-width: 240px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    i{
+                        font-size: 42px;
+                        line-height: 1;
+                        color: $prime-blue;
+                    }
+                    p{
+                        margin-top: 20px;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                }
+            }
+
+        }
+        
+        
+    }
+}
+.order-section{
+    background-color: $bg-gray;
+
+}

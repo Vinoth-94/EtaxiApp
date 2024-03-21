@@ -1,0 +1,260 @@
+@import 'variable';
+@import 'header';
+@import 'main';
+@import "footer";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: ".";    
+    display: block;    
+    height: 0;    
+    overflow: hidden; 
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: $prime-black ;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.body-wrapper{
+    position: relative;
+    overflow: hidden;
+    .header-wrapper{
+        position: fixed;
+
+        .navbar-nav-wrap{
+            
+            .navbar-nav{
+                
+                justify-content: flex-start !important;
+            }
+        }
+
+        .navbar-element{
+            &::after{
+                content: ' ';
+                width: 50vw;
+                height: 100%;
+                background-color: $prime-blue;
+                position: absolute;
+                border-radius: 10px 0 0 10px;
+                transform: skew(335deg);
+                z-index: -1;
+                left: 0;
+                top: 0;
+            }
+    
+            .navbar-aside {
+                color: #ffffff;
+            }
+            .nav-btn {
+                color: #ffffff !important;
+                border-color: #ffffff;
+            }
+    
+        }
+    
+    
+    }
+   
+    
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+h3, .heading-3 {
+    font-size: 37px;
+    line-height: 1.2973;
+}
+p{
+    margin: 0;
+    &+&{
+        margin-top: 12px;
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section-prop{
+    padding: 80px 0;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        display: inline-block;
+    }
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.button{
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid;
+    border-radius: 4px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms all ease-in-out;
+    // min-height: 55px;
+    
+}
+
+.hide{
+    display: none;
+}
+.big{
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .025em;
+}
+.lnk-shw{
+    display: none;
+}
+.lnk-hvr{
+    
+    &:hover{
+        .lnk-shw{
+            display:block !important;
+
+        }
+        
+    }
+}
+.row{
+    display: flex;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.col{
+    padding: 0 15px;
+    margin: 0  5px;
+    position: relative;
+}
+.col-1{
+    flex: 0 0 8.333%;
+    max-width: 8.333%;
+}
+.col-2{
+    flex: 0 0 16.666%;
+    max-width: 16.666%;
+}
+.col-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-4{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+.col-5{
+    flex: 0 0 41.666%;
+    max-width: 41.666%;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7{
+    flex: 0 0 58.333%;
+    max-width: 58.333%;
+}
+.col-8{
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+}
+.col-9{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col-10{
+    flex: 0 0 83.333%;
+    max-width: 83.333%;
+}
+.col-11{
+    flex: 0 0 91.666%;
+    max-width: 91.66%;
+}
+.col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.para{
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 100;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.section-wrap{
+    .banner-sec{
+        position: relative;
+        .banner-title{
+            text-align: center;
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            h1{
+                color: #fff;
+                line-height: 1.2;
+                font-size: 3.5rem;
+                margin-top: -20px;
+            }
+
+        }
+        
+    }
+}
+.alg-cntr{
+    display: flex;
+    justify-content: center;
+}
+.wht-grn{
+    &:hover{
+        background-color: $sec-green;
+        color: #fff !important;
+    }
+}
+
+.grn-wht{
+    &:hover{
+        background-color: #fff ;
+        color: black;
+    }
+}

@@ -1,0 +1,47 @@
+.footer-wrapper{
+    padding: 30px 0;
+    
+    .footer-classic-main{
+
+        .footer-container{
+            justify-content: space-between;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.8);
+
+            h2{
+                font-weight: 600;
+                letter-spacing: .05em;
+                font-size: 1.3rem;
+            }
+            p{
+                margin-top: 20px;
+            }
+
+            .button{
+                padding: 11px 25px;
+                min-height: 0;
+                margin-top: 20px;
+                
+                &:hover{
+                    background-color: $sec-green;
+                    color: #fff;
+                }
+            }
+
+            .footer-list{
+                margin-top: 20px;
+
+                li{
+                    padding: 7px 5px ;
+                    display: block;
+                }
+            }
+            .fl-2{
+                columns: 2;
+                break-inside: avoid;
+                column-gap: 30px;
+            }
+        }
+        
+    }
+}
